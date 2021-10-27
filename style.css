@@ -1,0 +1,484 @@
+body {
+  background-image: url(djpics/backretro1.gif);
+
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  color: #e5bf75;
+
+  background-repeat: repeat;
+}
+
+.main {
+  display: grid;
+  width: 400px;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+iframe {
+  width: 300px;
+  height: 124px;
+}
+
+a,
+a:visited,
+a:hover {
+  font-size: 16pt;
+  color: #e5bf75;
+  justify-self: center;
+}
+h1 {
+  font-size: 18pt;
+  font-weight: bold;
+}
+h2 {
+  font-size: 16pt;
+  font-weight: bold;
+  color: #feeebd;
+  line-height: 22pt;
+  text-align: center;
+}
+h3 {
+  font-size: 11pt;
+  color: #e5bf75;
+}
+h4 {
+  font-style: italic;
+}
+p {
+  text-align: justify;
+}
+.header {
+  display: grid;
+
+  margin: 20px;
+  grid-template-areas:
+    "headera"
+    "headerb";
+}
+.headera {
+  grid-area: headera;
+  padding: 5px;
+}
+.headerb {
+  grid-area: headerb;
+  padding: 5px;
+}
+
+.booth {
+  display: grid;
+  grid-template-areas:
+    "bootha bootha"
+    "boothb boothb"
+    "boothc boothd";
+  margin: 50px;
+  justify-self: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.bootha {
+  grid-area: bootha;
+}
+.boothb {
+  grid-area: boothb;
+}
+.boothc {
+  grid-area: boothc;
+}
+.boothd {
+  grid-area: boothd;
+}
+
+p {
+  font-size: 14pt;
+  line-height: 20pt;
+
+  word-spacing: 3pt;
+}
+
+.gram {
+  display: grid;
+  grid-template-areas:
+    "grama "
+    "gramb "
+    "gramc ";
+  margin: 50px;
+  justify-self: center;
+  justify-items: center;
+  justify-content: center;
+}
+.grama {
+  grid-area: grama;
+}
+.gramb {
+  grid-area: gramb;
+}
+.gramc {
+  grid-area: gramc;
+}
+
+.dj {
+  display: grid;
+  grid-template-areas:
+    "dja "
+    "djb ";
+  margin: 50px;
+  justify-self: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.dja {
+  grid-area: dja;
+}
+.djb {
+  grid-area: djb;
+}
+
+.jukebox {
+  display: grid;
+  grid-template-areas:
+    "jukea "
+    "jukeb ";
+  margin: 50px;
+  justify-self: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.jukea {
+  grid-area: jukea;
+}
+.jukeb {
+  grid-area: jukeb;
+}
+
+.verzoek {
+  display: grid;
+  grid-template-areas:
+    "verzoeka "
+    "verzoekb "
+    "verzoekc ";
+  margin: 50px;
+
+  justify-self: center;
+  justify-items: center;
+  justify-content: center;
+}
+.verzoeka {
+  grid-area: verzoeka;
+}
+.verzoekb {
+  grid-area: verzoekb;
+}
+.verzoekc {
+  grid-area: verzoekc;
+}
+.verzoek > img {
+  width: 241px;
+}
+.charley > img {
+  max-width: 600px;
+}
+h3 > a {
+  font-size: 11pt;
+  color: #e5bf75;
+}
+.fotosa,
+.fotosb {
+  margin: 50px;
+}
+.fotos > img {
+  max-width: 400px;
+}
+.charley {
+  margin: 50px;
+}
+.brochure {
+  margin: 50px;
+  max-width: 1000px;
+}
+
+.reviews {
+  display: grid;
+  grid-template-areas:
+    "google "
+    "quotesa "
+    "quotesb ";
+  margin: 50px;
+  justify-self: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.google {
+  grid-area: google;
+}
+.quotesa {
+  margin: 20px;
+  grid-area: quotesa;
+  text-align: start;
+}
+.quotesb {
+  margin: 20px;
+  text-align: start;
+  grid-area: quotesb;
+}
+
+.fotosc {
+  margin: 50px;
+  justify-self: center;
+  justify-items: center;
+  justify-content: center;
+}
+.footer {
+  margin: 20px;
+}
+
+@media only screen and (min-width: 640px) {
+  img {
+    width: 80%;
+    height: auto;
+  }
+  iframe {
+    width: 400px;
+    height: 166x;
+  }
+  .varia > img {
+    width: 100px;
+  }
+}
+@media (min-width: 900px) {
+  .main {
+    width: 90%;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .english {
+    margin-top: 50px;
+  }
+  .header {
+    background-color: black;
+    display: grid;
+    margin: 20px;
+    padding: 10px;
+    grid-template-areas: " headera headerb";
+    grid-template-columns: 1fr 1fr;
+  }
+  .headera {
+    grid-area: headera;
+  }
+  .headerb {
+    grid-area: headerb;
+    margin: 10px;
+  }
+  .booth {
+    background-color: black;
+    display: grid;
+    margin: 20px;
+    padding: 10px;
+    grid-template-areas:
+      " bootha boothb boothb"
+      " bootha boothc boothd";
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+  .bootha {
+    grid-area: bootha;
+    margin: 10px;
+  }
+  .boothb {
+    grid-area: boothb;
+    margin: 10px;
+  }
+
+  .gram {
+    background-color: black;
+    display: grid;
+    margin: 20px;
+    padding: 10px;
+    grid-template-areas: " grama gramb gramc";
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .grama {
+    grid-area: grama;
+    margin: 10px;
+  }
+  .gramb {
+    grid-area: gramb;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .gramc {
+    grid-area: gramc;
+    margin: 20px;
+  }
+
+  .dj {
+    background-color: black;
+    display: grid;
+    margin: 20px;
+    padding: 10px;
+    grid-template-areas: " dja djb";
+    grid-template-columns: 1fr 1fr;
+  }
+  .dja {
+    grid-area: dja;
+    margin: 20px;
+  }
+  .djb {
+    grid-area: djb;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .jukebox {
+    background-color: black;
+    display: grid;
+    margin: 20px;
+    padding: 10px;
+    grid-template-areas: " jukeboxa jukeboxb";
+    grid-template-columns: 1fr 1fr;
+  }
+  .jukeboxa {
+    grid-area: jukeboxa;
+    margin: 20px;
+  }
+  .jukeboxb {
+    grid-area: jukeboxb;
+    padding: 10px;
+  }
+  .reviews {
+    background-color: black;
+    justify-self: center;
+    padding: 40px;
+  }
+
+  .verzoek {
+    background-color: black;
+    display: grid;
+    margin: 20px;
+    padding: 10px;
+    grid-template-areas: " verzoeka verzoekb verzoekc";
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+  .verzoeka {
+    grid-area: verzoeka;
+    margin: 20px;
+  }
+  .verzoekb {
+    grid-area: verzoekb;
+    margin-bottom: 10px;
+  }
+  .verzoekc {
+    grid-area: verzoekc;
+    margin: 20px;
+  }
+  .varia > img {
+    width: 200px;
+  }
+
+  iframe {
+    width: 1000px;
+    height: 415px;
+    margin: 50px;
+  }
+  .reviews {
+    display: grid;
+    grid-template-areas:
+      "google google"
+      "quotesa quotesb";
+    margin: 50px;
+  }
+
+  .also {
+    width: 596px;
+  }
+
+  .fotosa {
+    display: flex;
+  }
+  .foto1 {
+    margin: 20px;
+  }
+  .foto2 {
+    margin: 20px;
+  }
+  .foto3 {
+    margin: 20px;
+  }
+
+  .fotosd {
+    display: flex;
+  }
+  .foto4 {
+    margin: 20px;
+  }
+  .foto5 {
+    margin: 20px;
+  }
+  .foto6 {
+    margin: 20px;
+  }
+
+  .fotosb {
+    display: flex;
+  }
+  .fotob1 {
+    background-color: white;
+    grid-area: fotob1;
+    margin: 5px;
+    padding: 5px;
+  }
+  .fotob2 {
+    background-color: white;
+    grid-area: fotob2;
+    margin: 5px;
+    padding: 5px;
+  }
+  .fotob3 {
+    background-color: white;
+    grid-area: fotob3;
+    margin: 5px;
+    padding: 5px;
+  }
+  .fotob4 {
+    background-color: white;
+    grid-area: fotob4;
+    margin: 5px;
+    padding: 5px;
+  }
+  .fotob5 {
+    background-color: white;
+    grid-area: fotob5;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .fotosc {
+    display: flex;
+  }
+
+  .fotoc1 {
+    grid-area: fotoc1;
+    margin: 10px;
+  }
+  .fotoc2 {
+    grid-area: fotoc2;
+    margin: 10px;
+  }
+  .fotoc3 {
+    grid-area: fotoc3;
+    margin: 10px;
+  }
+  .fotoc4 {
+    grid-area: fotoc4;
+    margin: 10px;
+  }
+}
