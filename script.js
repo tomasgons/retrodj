@@ -1,9 +1,9 @@
-var slideIndex = 0;
-carousel();
+let slideIndex = 0;
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
+
+const carousel = () => {
+  let i;
+  const x = document.querySelectorAll(".mySlides");
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
@@ -14,13 +14,12 @@ function carousel() {
   x[slideIndex - 1].style.display = "inline";
   setTimeout(carousel, 3000); // Change image every 3 seconds
 }
-
+carousel();
 var slideIndex2 = 0;
-carousel2();
 
-function carousel2() {
-  var i;
-  var x = document.getElementsByClassName("mySlides2");
+const carousel2 = () => {
+  let i;
+  const x = document.getElementsByClassName("mySlides2");
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
@@ -31,3 +30,5 @@ function carousel2() {
   x[slideIndex2 - 1].style.display = "inline";
   setTimeout(carousel2, 3000); // Change image every 3 seconds
 }
+
+carousel2();
